@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <div class="container-lg border p-5">
-        <div class="row">
-            <div class="col-md-2 border"><img src="logo.png" class="img-fluid" alt="Logo"></div>
-            <div class="col-md-3 offset-md-7 border">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4 border"><img src="logo1.png" class="img-fluid" width="100" alt="Logo"></div>
+            <div class="col-md-4 border">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Español</a>
@@ -26,12 +26,18 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-md-4 border">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">NBA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -42,31 +48,34 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Players
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Lebron James</a></li>
+                                <li><a class="dropdown-item" href="#">Shaq</a></li>
+                                <li><a class="dropdown-item" href="#">Arozarena</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Teams
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Bulls</a></li>
+                                <li><a class="dropdown-item" href="#">Lakers</a></li>
+                                <li><a class="dropdown-item" href="#">Celtics</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Add New
+                                     team</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -93,16 +102,21 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div class="row featurette">
+            <div class="col-md-6">
+              <h2 class="featurette-heading mt-2">Conferences</h2>
+              <p class="lead">La organización actual de la liga divide a los equipos en dos conferencias —la Oeste y la Este— de tres divisiones cada una, las cuales constan a su vez de cinco equipos.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="conferencias.jpg" class="img-fluid" width="650">
+            </div>
+          </div>
     </div>
+   
     <div class="container-lg border">
         <div class="row">
-            <div class="col-md-6 border">
-                <p class="h1">h1. Bootstrap heading</p>
-                <p class="h2">h2. Bootstrap heading</p>
-                <p class="h3">h3. Bootstrap heading</p>
-                <p class="h4">h4. Bootstrap heading</p>
-                <p class="h5">h5. Bootstrap heading</p>
-                <p class="h6">h6. Bootstrap heading</p>
+            <div class="col-md-6 border">               
+                <img src="mapa.jpg" class="img-fluid" width="650">
             </div>
             <div class="col-md-6 border">
                 <form action="/action_page.php">
@@ -121,6 +135,113 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2> Top Players </h2>
+        <div class="row mt-3">
+          <div class="col-lg-3 text-center">
+            <img class="rounded-circle img-fluid" src="shaq.png" alt="" width="140">
+            <h2>Shaquille O’Neal</h2>
+            <p>Shaq Attack</p>
+            <p><a class="btn btn-success" href="#" role="button">Biography »</a></p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <img class="rounded-circle img-fluid" src="jordan.jpg" alt="" width="140">
+            <h2>Michael Jordan</h2>
+            <p>Air Jordan</p>
+            <p><a class="btn btn-success" href="#" role="button">Biography »</a></p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <img class="rounded-circle img-fluid" src="kobe.jpg" alt="" width="140">
+            <h2>Kobe Bryant</h2>
+            <p>Black Mamba</p>
+            <p><a class="btn btn-success" href="#" role="button">Biography »</a></p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <img class="rounded-circle img-fluid" src="rodman.jpg" alt="" width="140">
+            <h2>Dennis Rodman</h2>
+            <p>Rodzilla</p>
+            <p><a class="btn btn-success" href="#" role="button">Biography »</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Top 1
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <strong>Shaquille O’Neal</strong> Shaquille O’Neal, in full Shaquille Rashaun O’Neal, byname Shaq, 
+                        (born March 6, 1972, Newark, New Jersey, U.S.), American basketball player, named in 1996 to the 
+                        National Basketball Association (NBA) list of its 50 greatest players of all time.
+                        As a high-school senior in San Antonio, Texas, O’Neal attracted the attention of college recruiters 
+                        when his team won the state championship. He attended Louisiana State University (LSU), where he 
+                        quickly established himself as one of the best players in the nation. He was named the consensus 
+                        College Player of the Year in 1991. O’Neal left school and entered the NBA draft in 1992 and was 
+                        taken with the first pick by the Orlando Magic. In 2000, however, he finished his studies and 
+                        earned a degree from LSU.
+                        <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Top 2
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <strong>Michael Jordan</strong> Michael Jordan, in full Michael Jeffrey Jordan, byname Air Jordan,
+                        (born February 17, 1963, Brooklyn, New York, U.S.), American collegiate and professional basketball
+                        player widely considered to be one of the greatest all-around players in the history of the game. 
+                        He led the Chicago Bulls to six National Basketball Association (NBA) championships (1991–93, 1996–98).
+                        Jordan grew up in Wilmington, North Carolina, and entered the University of North Carolina at Chapel
+                        Hill in 1981. As a freshman, he made the winning basket against Georgetown in the 1982 national 
+                        championship game. Jordan was named College Player of the Year in both his sophomore and junior years,
+                        leaving North Carolina after his junior year. He led the U.S. basketball team to Olympic gold medals 
+                        in 1984 in Los Angeles and in 1992 in Barcelona, Spain.
+                        <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Top 3
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <strong>Kobe Bryant</strong> Kobe Bryant, in full Kobe Bean Bryant, (born August 23, 1978, Philadelphia, 
+                        Pennsylvania, U.S.—died January 26, 2020, Calabasas, California), American professional basketball player, 
+                        who helped lead the Los Angeles Lakers of the National Basketball Association (NBA) to five championships (2000–02 and 2009–10).
+                        Bryant’s father, Joe (“Jelly Bean”) Bryant, was a professional basketball player who spent eight seasons in the 
+                        NBA and eight more playing in Italy, where Bryant went to school. When his family returned to the United States, 
+                        Bryant played basketball at Lower Merion High School in Ardmore, Pennsylvania, where he received several national 
+                        Player of the Year awards and broke the southeastern Pennsylvania scoring record set by Wilt Chamberlain with 2,883 points. 
+                        Bryant opted to forgo college and declared himself eligible for the NBA draft when he graduated from high school. 
+                        The Charlotte Hornets chose him with the 13th pick of the 1996 draft. He was traded to the Lakers shortly thereafter 
+                        and became the second youngest NBA player in history when the 1996–97 season opened. He quickly proved his merit with 
+                        the Lakers and was selected for the NBA All-Star Game in just his second season, becoming the youngest All-Star.
+                        <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
